@@ -40,10 +40,10 @@ int main(int argc , char** argv)
 {	
 	string s = argv[2];
 	int key;
-	cout << "enter the key for encryption: " << endl;
-	cin >> key;
 	if(s == "-e")
 	{
+		cout << "enter the key for encryption: " << endl;
+		cin >> key;
 		encrypt(argv[3] , argv[4] , key);
 	}
 	if(s == "-d")
@@ -51,10 +51,7 @@ int main(int argc , char** argv)
 		cout << "enter key value: " << endl;
 		int key1;
 		cin >> key1;
-		if(key1 == key)
-			decrypt(argv[3] , argv[4] , key);
-		else
-			cout << "key value entered is wrong!";
+		decrypt(argv[3] , argv[4] , key1);
 	}
-	return 0;
+return 0;
 }
