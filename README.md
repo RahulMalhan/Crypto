@@ -1,7 +1,7 @@
 # Crypto
 This is a simple file encryption program which uses shift cipher to create a new encrypted file of your input file.
 
-The format of command line arguements is :
+The format of command line arguments is :
 
         "crypto -e file_name encryptedfile_name"
 
